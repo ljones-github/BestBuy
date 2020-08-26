@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-08-18T12:11:51 PDT" name="Suite" finished-at="2020-08-18T12:15:05 PDT" duration-ms="194403">
+    <groups>
+    </groups>
+    <test started-at="2020-08-18T12:11:51 PDT" name="Test" finished-at="2020-08-18T12:15:05 PDT" duration-ms="194403">
+      <class name="Retail.BBHomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:11:51 PDT" name="setUp" finished-at="2020-08-18T12:12:03 PDT" duration-ms="12792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickBackToSchool()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:12:03 PDT" name="clickBackToSchool" finished-at="2020-08-18T12:12:21 PDT" duration-ms="17550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBackToSchool -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:12:21 PDT" name="closeDriver" finished-at="2020-08-18T12:12:23 PDT" duration-ms="2142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:12:23 PDT" name="setUp" finished-at="2020-08-18T12:12:34 PDT" duration-ms="11008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickCreditCards()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:12:34 PDT" name="clickCreditCards" finished-at="2020-08-18T12:12:43 PDT" duration-ms="8565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCreditCards -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:12:43 PDT" name="closeDriver" finished-at="2020-08-18T12:12:46 PDT" duration-ms="3763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:12:46 PDT" name="setUp" finished-at="2020-08-18T12:12:57 PDT" duration-ms="10578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickDealOfTheDay()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:12:57 PDT" name="clickDealOfTheDay" finished-at="2020-08-18T12:13:05 PDT" duration-ms="8553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickDealOfTheDay -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:13:05 PDT" name="closeDriver" finished-at="2020-08-18T12:13:09 PDT" duration-ms="3376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:13:09 PDT" name="setUp" finished-at="2020-08-18T12:13:20 PDT" duration-ms="11244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickForYourBusiness()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:13:20 PDT" name="clickForYourBusiness" finished-at="2020-08-18T12:13:29 PDT" duration-ms="8638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickForYourBusiness -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:13:29 PDT" name="closeDriver" finished-at="2020-08-18T12:13:32 PDT" duration-ms="3143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:13:32 PDT" name="setUp" finished-at="2020-08-18T12:13:43 PDT" duration-ms="11028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickGiftCards()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:13:43 PDT" name="clickGiftCards" finished-at="2020-08-18T12:13:52 PDT" duration-ms="8619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickGiftCards -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:13:52 PDT" name="closeDriver" finished-at="2020-08-18T12:13:53 PDT" duration-ms="1735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:13:53 PDT" name="setUp" finished-at="2020-08-18T12:14:05 PDT" duration-ms="11757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickTopDeals()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:05 PDT" name="clickTopDeals" finished-at="2020-08-18T12:14:14 PDT" duration-ms="8541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTopDeals -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:14 PDT" name="closeDriver" finished-at="2020-08-18T12:14:16 PDT" duration-ms="2578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:16 PDT" name="setUp" finished-at="2020-08-18T12:14:27 PDT" duration-ms="10993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="closestBestBuyToMe()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:27 PDT" name="closestBestBuyToMe" finished-at="2020-08-18T12:14:28 PDT" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closestBestBuyToMe -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:28 PDT" name="closeDriver" finished-at="2020-08-18T12:14:30 PDT" duration-ms="2190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:30 PDT" name="setUp" finished-at="2020-08-18T12:14:41 PDT" duration-ms="11415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="myCart()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:41 PDT" name="myCart" finished-at="2020-08-18T12:14:50 PDT" duration-ms="8450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myCart -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:50 PDT" name="closeDriver" finished-at="2020-08-18T12:14:52 PDT" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:14:52 PDT" name="setUp" finished-at="2020-08-18T12:15:02 PDT" duration-ms="10708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="pressHomeIcon()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:15:02 PDT" name="pressHomeIcon" finished-at="2020-08-18T12:15:03 PDT" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pressHomeIcon -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@8c11eee]" started-at="2020-08-18T12:15:03 PDT" name="closeDriver" finished-at="2020-08-18T12:15:05 PDT" duration-ms="2289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- Retail.BBHomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
