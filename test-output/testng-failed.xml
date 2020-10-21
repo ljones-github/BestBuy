@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Retail.BBCreateAccountTest">
+      <class name="Retail.BBHomePageTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="navigateToCreateAccount"/>
-          <include name="myBestBuyId"/>
+          <include name="productsHowToShop"/>
+          <include name="setUp"/>
+          <include name="closeDriver"/>
         </methods>
-      </class> <!-- Retail.BBCreateAccountTest -->
+      </class> <!-- Retail.BBHomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

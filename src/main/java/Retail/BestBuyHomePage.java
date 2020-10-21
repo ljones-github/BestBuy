@@ -1,13 +1,20 @@
 package Retail;
 
 
+import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import jdk.jfr.Timespan;
 
 public class BestBuyHomePage {
 
@@ -101,6 +108,8 @@ public class BestBuyHomePage {
 	private WebElement smartHome;
 	
 	private WebElement dronesToys;
+	
+	private boolean reinitializeFlag = false;
 	
 	public BestBuyHomePage(WebDriver driver)
 	{
@@ -201,9 +210,14 @@ public class BestBuyHomePage {
 		return dropDowns.get(3);
 	}
 	
-	public void clickToInitializeProducts()
+	public void clickToInitializeProducts() throws InterruptedException
 	{
-		getProductsDropDownMenuCarat().click();
+		reinitializeFlag = true;
+		Actions s = new Actions(driver);
+		WebDriverWait myWait = new WebDriverWait(driver, TimeUnit.MILLISECONDS.toMillis(5000));
+		myWait.until(ExpectedConditions.elementToBeClickable(getProductsDropDownMenuCarat()));
+		Thread.sleep(1000);
+		s.click(getProductsDropDownMenuCarat()).build().perform();
 		productsDropDownLinks = driver.findElements(By.xpath("//ul[@data-level='1']/li/a"));
 		productCategories = driver.findElements(By.xpath("//li[@class='item-parent-menu']"));
 		
@@ -285,5 +299,117 @@ public class BestBuyHomePage {
 			
 		}		
 }
+		
+		
 }
+	public WebElement getHowToShopLink()
+	{
+		return howToShopLink;
+	}
+	
+	public WebElement getbuyBuyOutletLink()
+	{
+		return buyBuyOutletLink;
+	}
+	
+	public WebElement getXboxSeriesLink()
+	{
+		return xboxSeriesLink;
+	}
+	
+	public WebElement getPlaystationFiveLink()
+	{
+		return playstationFiveLink;
+	}
+	
+	public WebElement getGiftIdeasLink()
+	{
+		return giftIdeasLink;
+	}
+	
+	public WebElement getFallSaleLink()
+	{
+		return fallSaleLink;
+	}
+	
+	public WebElement getAppleLatestLink()
+	{
+		return appleLatestLink;
+	}
+	
+	public WebElement getElevateHomeLink()
+	{
+		return elevateHomeLink;
+	}
+	
+	public WebElement getAppliances()
+	{
+		return appliances;
+	}
+	
+	public WebElement getTvHomeTheatre()
+	{
+		return tvHomeTheatre;
+	}
+	
+	public WebElement getComputerTables()
+	{
+		return computerTables;
+	}
+	
+	public WebElement getCameraCamcorders()
+	{
+		return cameraCamcorders;
+	}
+	
+	public WebElement getCellPhones()
+	{
+		return cellPhones;
+	}
+	
+	public WebElement getAudio()
+	{
+		return audio;
+	}
+	
+	public WebElement getVideoGames()
+	{
+		return videoGames;
+	}
+	
+	public WebElement getMoviesMusic()
+	{
+		return moviesMusic;
+	}
+	
+	public WebElement getCarElectronicGps()
+	{
+		return carElectronicGps;
+	}
+	
+	public WebElement getWearableTech()
+	{
+		return wearableTech;
+	}
+	
+	public WebElement getHealth()
+	{
+		return health;
+	}
+	
+	public WebElement getSustainableLiving()
+	{
+		return sustainableLiving;
+	}
+	
+	public WebElement getHomeFurniture()
+	{
+		return smartHome;
+	}
+	
+	public WebElement getDronesToys()
+	{
+		return dronesToys;
+	}
+	
 } 

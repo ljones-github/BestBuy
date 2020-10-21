@@ -73,9 +73,9 @@ public class BBCreateAccountTest extends TestBase{
 		{
 			log.info("Clicking account drop down button..");
 			WebDriverWait myWait = new WebDriverWait(driver, 10);
-			myWait.until(ExpectedConditions.elementToBeClickable(bbhp.getAccountDropDownMenu()));
-			s.moveToElement(bbhp.getAccountDropDownMenu()).pause(Duration.ofSeconds(3)).build().perform();
-			s.click(bbhp.getAccountDropDownMenu()).build().perform();
+			myWait.until(ExpectedConditions.elementToBeClickable(bbhp.getAccountDropDownMenuCarat()));
+			s.moveToElement(bbhp.getAccountDropDownMenuCarat()).pause(Duration.ofSeconds(3)).build().perform();
+			s.click(bbhp.getAccountDropDownMenuCarat()).build().perform();
 			log.debug("Class: " + BBHomePageTest.class.getName() + " || Debug: Button successfully clicked || Method: " + methodName);
 			myWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("button[class*='am-create-account__button']"))));
 			WebElement createAccount = driver.findElement(By.cssSelector("button[class*='am-create-account__button']"));
