@@ -279,10 +279,11 @@ public class BBHomePageTest extends TestBase{
 	}
 	
 	@Test
-	public void productsHowToShop()
+	public void productsHowToShop() throws IOException, InterruptedException
 	{
 		methodName = new Throwable().getStackTrace()[0].getMethodName();
 		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
 		try
 		{
 			log.info("Attempting to initialize items in the dropdown..");
@@ -295,6 +296,195 @@ public class BBHomePageTest extends TestBase{
 		}
 		
 		bbhp.getHowToShopLink().click();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		//bbpt.TakeAScreenshot(methodName, driver);
+		Thread.sleep(2000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/misc/shop-confidently/"));;
+		
 	}
+	
+	@Test
+	public void productsBestBuyOutlet() throws IOException, InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		try
+		{
+			log.info("Attempting to initialize items in the dropdown..");
+			bbhp.clickToInitializeProducts();
+			log.debug("Items successfully initialized");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Desc: " + e);
+		}
+		
+		bbhp.getbestBuyOutletLink().click();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		//bbpt.TakeAScreenshot(methodName, driver);
+		Thread.sleep(2000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/electronics/outlet-refurbished-clearance/"));
+		
+	}
+	
+	@Test
+	public void productsXboxSeries() throws IOException, InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		try
+		{
+			log.info("Attempting to initialize items in the dropdown..");
+			bbhp.clickToInitializeProducts();
+			log.debug("Items successfully initialized");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Desc: " + e);
+		}
+		
+		bbhp.getXboxSeriesLink().click();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		//bbpt.TakeAScreenshot(methodName, driver);
+		Thread.sleep(2000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/video-games/xbox-series-x-and-s/"));
+		
+	}
+	
+	@Test
+	public void productsPlaystationFive() throws IOException, InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		try
+		{
+			log.info("Attempting to initialize items in the dropdown..");
+			bbhp.clickToInitializeProducts();
+			log.debug("Items successfully initialized");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Desc: " + e);
+		}
+		
+		bbhp.getPlaystationFiveLink().click();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		//bbpt.TakeAScreenshot(methodName, driver);
+		Thread.sleep(2000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/video-games/playstation-5/"));
+		
+	}
+	
+	@Test
+	public void productsGiftIdeas() throws IOException, InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		try
+		{
+			log.info("Attempting to initialize items in the dropdown..");
+			bbhp.clickToInitializeProducts();
+			log.debug("Items successfully initialized");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Desc: " + e);
+		}
+		
+		bbhp.getGiftIdeasLink().click();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		//bbpt.TakeAScreenshot(methodName, driver);
+		Thread.sleep(2000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/electronics/gift-ideas/"));
+		
+	}
+	
+	@Test
+	public void productsAppleLatest() throws IOException, InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		try
+		{
+			log.info("Attempting to initialize items in the dropdown..");
+			bbhp.clickToInitializeProducts();
+			log.debug("Items successfully initialized");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Desc: " + e);
+		}
+		
+		bbhp.getAppleLatestLink().click();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		//bbpt.TakeAScreenshot(methodName, driver);
+		Thread.sleep(2000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/brands/apple/"));
+		
+	}
+	
+	@Test
+	public void productsTopTvDeals() throws IOException, InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		try
+		{
+			log.info("Attempting to initialize items in the dropdown..");
+			bbhp.clickToInitializeProducts();
+			log.debug("Items successfully initialized");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Desc: " + e);
+		}
+		
+		bbhp.getTopTvDealsLink().click();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		//bbpt.TakeAScreenshot(methodName, driver);
+		Thread.sleep(2000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/promo/tv-deals"));
+		
+	}
+	
+	@Test
+	public void productsHolidayDecor() throws IOException, InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		try
+		{
+			log.info("Attempting to initialize items in the dropdown..");
+			bbhp.clickToInitializeProducts();
+			log.debug("Items successfully initialized");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Desc: " + e);
+		}
+		
+		bbhp.getHolidayDecorLink().click();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		//bbpt.TakeAScreenshot(methodName, driver);
+		Thread.sleep(2000);
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/promo/black-friday-seasonal-deals"));
+		
+	}
+
 
 }

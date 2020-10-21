@@ -5,7 +5,7 @@
     <classes>
       <class name="Retail.BBHomePageTest">
       	<methods>
-      		<include name = "productsHowToShop"/>
+      		<include name = "products.*"/>
       	</methods>
       </class>
     </classes>

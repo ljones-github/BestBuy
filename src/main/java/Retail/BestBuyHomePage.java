@@ -63,7 +63,7 @@ public class BestBuyHomePage {
 	
 	private WebElement howToShopLink;
 	
-	private WebElement buyBuyOutletLink;
+	private WebElement bestBuyOutletLink;
 	
 	private WebElement xboxSeriesLink;
 	
@@ -71,7 +71,9 @@ public class BestBuyHomePage {
 	
 	private WebElement giftIdeasLink;
 	
-	private WebElement fallSaleLink;
+	private WebElement topTvDealsLink;
+	
+	private WebElement holidayDecorLink;
 	
 	private WebElement appleLatestLink;
 	
@@ -108,6 +110,8 @@ public class BestBuyHomePage {
 	private WebElement smartHome;
 	
 	private WebElement dronesToys;
+	
+	private WebElement productsClose;
 	
 	private boolean reinitializeFlag = false;
 	
@@ -218,6 +222,7 @@ public class BestBuyHomePage {
 		myWait.until(ExpectedConditions.elementToBeClickable(getProductsDropDownMenuCarat()));
 		Thread.sleep(1000);
 		s.click(getProductsDropDownMenuCarat()).build().perform();
+		productsClose = driver.findElement(By.cssSelector("button[class*='menu-close-button']"));
 		productsDropDownLinks = driver.findElements(By.xpath("//ul[@data-level='1']/li/a"));
 		productCategories = driver.findElements(By.xpath("//li[@class='item-parent-menu']"));
 		
@@ -229,7 +234,7 @@ public class BestBuyHomePage {
 				howToShopLink = productsDropDownLinks.get(0);
 				break;
 			case 1:
-				buyBuyOutletLink = productsDropDownLinks.get(1);
+				bestBuyOutletLink = productsDropDownLinks.get(1);
 				break;
 			case 2:
 				xboxSeriesLink = productsDropDownLinks.get(2);
@@ -241,13 +246,13 @@ public class BestBuyHomePage {
 				giftIdeasLink = productsDropDownLinks.get(4);
 				break;
 			case 5: 
-				fallSaleLink = productsDropDownLinks.get(5);
+				appleLatestLink = productsDropDownLinks.get(5);
 				break;
 			case 6:
-				appleLatestLink = productsDropDownLinks.get(6);
+				topTvDealsLink = productsDropDownLinks.get(6);
 				break;
 			case 7:
-				elevateHomeLink = productsDropDownLinks.get(7);
+				holidayDecorLink = productsDropDownLinks.get(7);
 				break;
 			default:
 				break;
@@ -307,9 +312,9 @@ public class BestBuyHomePage {
 		return howToShopLink;
 	}
 	
-	public WebElement getbuyBuyOutletLink()
+	public WebElement getbestBuyOutletLink()
 	{
-		return buyBuyOutletLink;
+		return bestBuyOutletLink;
 	}
 	
 	public WebElement getXboxSeriesLink()
@@ -327,19 +332,19 @@ public class BestBuyHomePage {
 		return giftIdeasLink;
 	}
 	
-	public WebElement getFallSaleLink()
-	{
-		return fallSaleLink;
-	}
-	
 	public WebElement getAppleLatestLink()
 	{
 		return appleLatestLink;
 	}
 	
-	public WebElement getElevateHomeLink()
+	public WebElement getTopTvDealsLink()
 	{
-		return elevateHomeLink;
+		return topTvDealsLink;
+	}
+	
+	public WebElement getHolidayDecorLink()
+	{
+		return holidayDecorLink;
 	}
 	
 	public WebElement getAppliances()

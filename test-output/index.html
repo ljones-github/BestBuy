@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,42 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Retail.BBHomePageTest" class="method navigator-link" hash-for-method="productsAppleLatest">productsAppleLatest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Retail.BBHomePageTest" class="method navigator-link" hash-for-method="productsBestBuyOutlet">productsBestBuyOutlet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Retail.BBHomePageTest" class="method navigator-link" hash-for-method="productsGiftIdeas">productsGiftIdeas</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Retail.BBHomePageTest" class="method navigator-link" hash-for-method="productsHolidayDecor">productsHolidayDecor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Retail.BBHomePageTest" class="method navigator-link" hash-for-method="productsHowToShop">productsHowToShop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Retail.BBHomePageTest" class="method navigator-link" hash-for-method="productsPlaystationFive">productsPlaystationFive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Retail.BBHomePageTest" class="method navigator-link" hash-for-method="productsTopTvDeals">productsTopTvDeals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Retail.BBHomePageTest" class="method navigator-link" hash-for-method="productsXboxSeries">productsXboxSeries</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +160,58 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="productsAppleLatest">
+                  </a> <!-- productsAppleLatest -->
+                  <span class="method-name">productsAppleLatest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productsBestBuyOutlet">
+                  </a> <!-- productsBestBuyOutlet -->
+                  <span class="method-name">productsBestBuyOutlet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productsGiftIdeas">
+                  </a> <!-- productsGiftIdeas -->
+                  <span class="method-name">productsGiftIdeas</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productsHolidayDecor">
+                  </a> <!-- productsHolidayDecor -->
+                  <span class="method-name">productsHolidayDecor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="productsHowToShop">
                   </a> <!-- productsHowToShop -->
                   <span class="method-name">productsHowToShop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productsPlaystationFive">
+                  </a> <!-- productsPlaystationFive -->
+                  <span class="method-name">productsPlaystationFive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productsTopTvDeals">
+                  </a> <!-- productsTopTvDeals -->
+                  <span class="method-name">productsTopTvDeals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productsXboxSeries">
+                  </a> <!-- productsXboxSeries -->
+                  <span class="method-name">productsXboxSeries</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +230,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;Retail.BBHomePageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;productsHowToShop&quot;/&gt;
+          &lt;include name=&quot;products.*&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Retail.BBHomePageTest --&gt;
     &lt;/classes&gt;
@@ -188,16 +272,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'productsHowToShop')
+data.setCell(0, 1, 'productsTopTvDeals')
 data.setCell(0, 2, 'Retail.BBHomePageTest')
-data.setCell(0, 3, 6902);
+data.setCell(0, 3, 29525);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'productsHolidayDecor')
+data.setCell(1, 2, 'Retail.BBHomePageTest')
+data.setCell(1, 3, 26316);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'productsPlaystationFive')
+data.setCell(2, 2, 'Retail.BBHomePageTest')
+data.setCell(2, 3, 21035);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'productsAppleLatest')
+data.setCell(3, 2, 'Retail.BBHomePageTest')
+data.setCell(3, 3, 19578);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'productsBestBuyOutlet')
+data.setCell(4, 2, 'Retail.BBHomePageTest')
+data.setCell(4, 3, 18976);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'productsGiftIdeas')
+data.setCell(5, 2, 'Retail.BBHomePageTest')
+data.setCell(5, 3, 18481);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'productsXboxSeries')
+data.setCell(6, 2, 'Retail.BBHomePageTest')
+data.setCell(6, 3, 18072);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'productsHowToShop')
+data.setCell(7, 2, 'Retail.BBHomePageTest')
+data.setCell(7, 3, 17668);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -224,17 +336,17 @@ return data;
                 <br/>
                 <span class="ignored-method-name">createAccount</span>
                 <br/>
-                <span class="ignored-method-name">closestBestBuyToMe</span>
-                <br/>
                 <span class="ignored-method-name">validateLinks</span>
+                <br/>
+                <span class="ignored-method-name">closestBestBuyToMe</span>
                 <br/>
                 <span class="ignored-method-name">clickGiftIdeas</span>
                 <br/>
                 <span class="ignored-method-name">clickForYourBusiness</span>
                 <br/>
-                <span class="ignored-method-name">clickTopDeals</span>
-                <br/>
                 <span class="ignored-method-name">clickGiftCards</span>
+                <br/>
+                <span class="ignored-method-name">clickTopDeals</span>
                 <br/>
                 <span class="ignored-method-name">pressHomeIcon</span>
                 <br/>
@@ -256,12 +368,96 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">productsHowToShop</span>
-                <span class="method-start">14131 ms</span>
+                <span class="method-name">productsAppleLatest</span>
+                <span class="method-start">12445 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">21048 ms</span>
+                <span class="method-start">32023 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">33209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productsBestBuyOutlet</span>
+                <span class="method-start">45247 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">64223 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">65043 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productsGiftIdeas</span>
+                <span class="method-start">77500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">95981 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">97053 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productsHolidayDecor</span>
+                <span class="method-start">108726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">135042 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">136306 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productsHowToShop</span>
+                <span class="method-start">149076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">166744 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">168279 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productsPlaystationFive</span>
+                <span class="method-start">183511 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">204546 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">205395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productsTopTvDeals</span>
+                <span class="method-start">220654 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">250179 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">251087 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productsXboxSeries</span>
+                <span class="method-start">262489 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">280561 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

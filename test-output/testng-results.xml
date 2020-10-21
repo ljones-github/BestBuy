@@ -1,21 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="11" total="12" passed="1" failed="0" skipped="0">
+<testng-results ignored="11" total="19" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-21T10:42:44 PDT" name="Suite" finished-at="2020-10-21T10:43:06 PDT" duration-ms="21913">
+  <suite started-at="2020-10-21T13:02:09 PDT" name="Suite" finished-at="2020-10-21T13:06:51 PDT" duration-ms="281843">
     <groups>
     </groups>
-    <test started-at="2020-10-21T10:42:44 PDT" name="Test" finished-at="2020-10-21T10:43:06 PDT" duration-ms="21913">
+    <test started-at="2020-10-21T13:02:09 PDT" name="Test" finished-at="2020-10-21T13:06:51 PDT" duration-ms="281843">
       <class name="Retail.BBHomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@4c2cc639]" started-at="2020-10-21T10:42:44 PDT" name="setUp" finished-at="2020-10-21T10:42:58 PDT" duration-ms="14131" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:02:09 PDT" name="setUp" finished-at="2020-10-21T13:02:22 PDT" duration-ms="12445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productsHowToShop()[pri:0, instance:Retail.BBHomePageTest@4c2cc639]" started-at="2020-10-21T10:42:58 PDT" name="productsHowToShop" finished-at="2020-10-21T10:43:05 PDT" duration-ms="6902" status="PASS">
+        <test-method signature="productsAppleLatest()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:02:22 PDT" name="productsAppleLatest" finished-at="2020-10-21T13:02:41 PDT" duration-ms="19578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsAppleLatest -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:02:41 PDT" name="closeDriver" finished-at="2020-10-21T13:02:42 PDT" duration-ms="1186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:02:42 PDT" name="setUp" finished-at="2020-10-21T13:02:54 PDT" duration-ms="12038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsBestBuyOutlet()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:02:54 PDT" name="productsBestBuyOutlet" finished-at="2020-10-21T13:03:13 PDT" duration-ms="18976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsBestBuyOutlet -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:03:13 PDT" name="closeDriver" finished-at="2020-10-21T13:03:14 PDT" duration-ms="820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:03:14 PDT" name="setUp" finished-at="2020-10-21T13:03:27 PDT" duration-ms="12457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsGiftIdeas()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:03:27 PDT" name="productsGiftIdeas" finished-at="2020-10-21T13:03:45 PDT" duration-ms="18481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsGiftIdeas -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:03:45 PDT" name="closeDriver" finished-at="2020-10-21T13:03:46 PDT" duration-ms="1072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:03:46 PDT" name="setUp" finished-at="2020-10-21T13:03:58 PDT" duration-ms="11673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsHolidayDecor()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:03:58 PDT" name="productsHolidayDecor" finished-at="2020-10-21T13:04:24 PDT" duration-ms="26316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsHolidayDecor -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:04:24 PDT" name="closeDriver" finished-at="2020-10-21T13:04:26 PDT" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:04:26 PDT" name="setUp" finished-at="2020-10-21T13:04:38 PDT" duration-ms="12770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsHowToShop()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:04:38 PDT" name="productsHowToShop" finished-at="2020-10-21T13:04:56 PDT" duration-ms="17668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productsHowToShop -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@4c2cc639]" started-at="2020-10-21T10:43:05 PDT" name="closeDriver" finished-at="2020-10-21T10:43:06 PDT" duration-ms="849" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:04:56 PDT" name="closeDriver" finished-at="2020-10-21T13:04:57 PDT" duration-ms="1535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:04:57 PDT" name="setUp" finished-at="2020-10-21T13:05:13 PDT" duration-ms="15232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsPlaystationFive()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:05:13 PDT" name="productsPlaystationFive" finished-at="2020-10-21T13:05:34 PDT" duration-ms="21035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsPlaystationFive -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:05:34 PDT" name="closeDriver" finished-at="2020-10-21T13:05:35 PDT" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:05:35 PDT" name="setUp" finished-at="2020-10-21T13:05:50 PDT" duration-ms="15259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsTopTvDeals()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:05:50 PDT" name="productsTopTvDeals" finished-at="2020-10-21T13:06:19 PDT" duration-ms="29525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsTopTvDeals -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:06:19 PDT" name="closeDriver" finished-at="2020-10-21T13:06:20 PDT" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:06:20 PDT" name="setUp" finished-at="2020-10-21T13:06:32 PDT" duration-ms="11402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsXboxSeries()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:06:32 PDT" name="productsXboxSeries" finished-at="2020-10-21T13:06:50 PDT" duration-ms="18072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsXboxSeries -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Retail.BBHomePageTest@52d645b1]" started-at="2020-10-21T13:06:50 PDT" name="closeDriver" finished-at="2020-10-21T13:06:51 PDT" duration-ms="1266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
