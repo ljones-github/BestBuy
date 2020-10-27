@@ -485,6 +485,30 @@ public class BBHomePageTest extends TestBase{
 		Assert.assertTrue(driver.getCurrentUrl().contains("https://www.bestbuy.com/site/promo/black-friday-seasonal-deals"));
 		
 	}
+	
+	@Test
+	public void productsAppliances() throws InterruptedException, IOException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		try
+		{
+			log.info("Attempting to click dropdowns to initialize web element objects..");
+			bbhp.clickToInitializeProducts();
+			bbhp.clickAppliancesInit();
+			log.debug("Items successfully initialized");
+		}
+		catch(Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Error: " + e);
+		}
+		
+		bbhp.getMajorKitchenApp().click();
+		Thread.sleep(3000);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		bbpt.TakeAFULLScreenshot(methodName, driver);
+		
+	}
 
 
 }

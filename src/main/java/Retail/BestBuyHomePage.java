@@ -113,6 +113,46 @@ public class BestBuyHomePage {
 	
 	private WebElement productsClose;
 	
+	// Products/appliances enhanced menu-items
+	
+	private WebElement majorKitchenApp;
+	
+	private WebElement smallKitchenApp;
+
+	private WebElement luxKitchenApp;
+	
+	private WebElement vacuumsNfloorCare;
+	
+	private WebElement washersNDryers;
+	
+	private WebElement heatCoolAirQa;
+
+	private WebElement shopByBrand;
+	
+	private WebElement dealsNoutletAppliances;
+	
+	private WebElement servicesNsupportAppliances;
+	
+	/*******************************************/
+	
+	//Products/tv home theater enhanced menu-items
+	
+	private WebElement tvsBySize;
+	
+	private WebElement tvsByType;
+	
+	private WebElement homeTheatreAudioNVideo;
+	
+	private WebElement homeTheatreAcc;
+	
+	private WebElement dealsNoutletTv;
+	
+	private WebElement servicesNsupportTv;
+	
+	private WebElement inStoreExp;
+	
+	private WebElement breakCrumbTitle;
+
 	private boolean reinitializeFlag = false;
 	
 	public BestBuyHomePage(WebDriver driver)
@@ -352,6 +392,72 @@ public class BestBuyHomePage {
 		return appliances;
 	}
 	
+	public void clickAppliancesInit()
+	{
+		appliances.click();
+		List<WebElement>appliancesItems = driver.findElements(By.xpath("//ul[@id='header-menu-13']//li[@class='item-parent-menu']"));
+		breakCrumbTitle = driver.findElement(By.cssSelector(".breadcrumbTitle"));
+		for(WebElement item : appliancesItems)
+		{
+			switch(item.getText())
+			{
+			case ("Major Kitchen Appliances"):
+				majorKitchenApp = item;
+			case ("Small Kitchen Appliances"):
+				smallKitchenApp = item;
+			case ("Luxury Kitchen Appliances"):
+				luxKitchenApp = item;
+			case ("Washers & Dryers"):
+				washersNDryers = item;
+			case ("Vacuums & Floor Care"):
+				vacuumsNfloorCare = item;
+			case ("Heating, Cooling & Air Quality"):
+				heatCoolAirQa = item;
+			case ("Shop by Brand"):
+				shopByBrand = item;
+			case ("Deals & Outlet"):
+				dealsNoutletAppliances = item;
+			case ("Services & Support"):
+				servicesNsupportAppliances = item;
+			default:
+				break;
+			
+			
+			}
+		}
+	}
+	
+	public void clickTvHomeTheatreInit()
+	{
+		tvHomeTheatre.click();
+		List<WebElement>tvHomeTheatreItems = driver.findElements(By.xpath("//ul[@id='header-menu-25']//li[@class='item-parent-menu']"));
+		breakCrumbTitle = driver.findElement(By.cssSelector(".breadcrumbTitle"));
+		for(WebElement item : tvHomeTheatreItems)
+		{
+			switch(item.getText())
+			{
+			case ("TVs by Size"):
+				tvsBySize = item;
+			case ("TVs by Type"):
+				tvsByType = item;
+			case ("Home Theater Audio & Video"):
+				homeTheatreAudioNVideo = item;
+			case ("Home Theater Accessories"):
+				homeTheatreAcc = item;
+			case ("Deals & Outlet"):
+				dealsNoutletTv = item;
+			case ("Services & Support"):
+				servicesNsupportTv = item;
+			case ("In-Store Experience"):
+				inStoreExp = item;
+			default:
+				break;
+			
+			
+			}
+		}
+	}
+	
 	public WebElement getTvHomeTheatre()
 	{
 		return tvHomeTheatre;
@@ -415,6 +521,56 @@ public class BestBuyHomePage {
 	public WebElement getDronesToys()
 	{
 		return dronesToys;
+	}
+	
+	public WebElement getMajorKitchenApp()
+	{
+		return majorKitchenApp; 				
+	}
+	
+	public WebElement getSmallKitchenApp()
+	{
+		return smallKitchenApp;
+	}
+
+	public WebElement getLuxKitchenApp()
+	{
+		return luxKitchenApp;
+	}
+	
+	public WebElement getVacuumsNfloorCare()
+	{
+		return vacuumsNfloorCare;
+	}
+	
+	public WebElement getWashersNDryers()
+	{
+		return washersNDryers;
+	}
+	
+	public WebElement getHeatCoolAirQa()
+	{
+		return heatCoolAirQa;
+	}
+	
+	public WebElement getShopByBrand()
+	{
+		return shopByBrand;
+	}
+	
+	public WebElement getDealsNoutletAppliances()
+	{
+		return dealsNoutletAppliances;
+	}
+	
+	public WebElement getServicesNsupportAppliances()
+	{
+		return servicesNsupportAppliances;
+	}
+	// -- End
+	public WebElement closeProducts()
+	{
+		return productsClose;
 	}
 	
 } 
