@@ -65,13 +65,6 @@ public class BBHomePageTest extends TestBase{
 		}
 	}
 	
-	@AfterMethod
-	public void closeDriver()
-	{
-		driver.close();
-		log.debug("Class: " + BBHomePageTest.class.getName() + " || Debug: Current driver window was closed || Method: " + methodName);
-	}
-	
 	@Test
 	public void pressHomeIcon() throws IOException
 	{
@@ -509,6 +502,93 @@ public class BBHomePageTest extends TestBase{
 		bbpt.TakeAFULLScreenshot(methodName, driver);
 		
 	}
-
+	
+	@Test
+	public void productsDropDownTest() throws InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		Thread.sleep(4000);
+		
+		try
+		{
+			log.debug("Attempting to attain links");
+			log.info(bbpt.clickLinksInDropdown(driver, bbhp.getProductsDropdown()));
+			log.info("Links successfully clicked");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Error: " + e);
+		}	
+	}
+	
+	@Test
+	public void brandsDropDownTest() throws InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		Thread.sleep(4000);
+		
+		try
+		{
+			log.debug("Attempting to attain links");
+			log.info(bbpt.clickLinksInDropdown(driver, bbhp.getBrandsDropdown()));
+			log.info("Links successfully clicked");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Error: " + e);
+		}	
+	}
+	
+	@Test
+	public void dealsDropDownTest() throws InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		Thread.sleep(4000);
+		
+		try
+		{
+			log.debug("Attempting to attain links");
+			log.info(bbpt.clickLinksInDropdown(driver, bbhp.getDealsDropdown()));
+			log.info("Links successfully clicked");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Error: " + e);
+		}	
+	}
+	
+	@Test
+	public void servicesDropDownTest() throws InterruptedException
+	{
+		methodName = new Throwable().getStackTrace()[0].getMethodName();
+		BestBuyHomePage bbhp = new BestBuyHomePage(driver);
+		BBHomePageTest bbpt = new BBHomePageTest();
+		Thread.sleep(4000);
+		
+		try
+		{
+			log.debug("Attempting to attain links");
+			log.info(bbpt.clickLinksInDropdown(driver, bbhp.getServicesDropdown()));
+			log.info("Links successfully clicked");
+		}
+		catch (Exception e)
+		{
+			log.error("Class: " + BBHomePageTest.class.getName() + " || Method: " + methodName + " || Error: " + e);
+		}	
+	}
+	
+	// END
+	@AfterMethod
+	public void closeDriver()
+	{
+		driver.quit();
+		log.debug("Class: " + BBHomePageTest.class.getName() + " || Debug: Current driver window was closed || Method: " + methodName);
+	}
 
 }

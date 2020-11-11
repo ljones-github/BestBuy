@@ -155,6 +155,18 @@ public class BestBuyHomePage {
 
 	private boolean reinitializeFlag = false;
 	
+	@FindBy(xpath="//ul[@class='global-nav-list']/li[1]")
+	private WebElement productsDropdown;
+	
+	@FindBy(xpath="//ul[@class='global-nav-list']/li[2]")
+	private WebElement brandsDropdown;
+	
+	@FindBy(xpath="//ul[@class='global-nav-list']/li[3]")
+	private WebElement dealsDropdown;
+	
+	@FindBy(xpath="//ul[@class='global-nav-list']/li[4]")
+	private WebElement servicesDropdown;
+	
 	public BestBuyHomePage(WebDriver driver)
 	{
 		this.driver = driver;
@@ -347,6 +359,8 @@ public class BestBuyHomePage {
 		
 		
 }
+	
+	
 	public WebElement getHowToShopLink()
 	{
 		return howToShopLink;
@@ -573,4 +587,23 @@ public class BestBuyHomePage {
 		return productsClose;
 	}
 	
+	public WebElement getProductsDropdown()
+	{
+		return productsDropdown;
+	}
+	
+	public WebElement getBrandsDropdown()
+	{
+		return brandsDropdown;
+	}
+	
+	public WebElement getDealsDropdown()
+	{
+		return dealsDropdown;
+	}
+	
+	public WebElement getServicesDropdown()
+	{
+		return servicesDropdown;
+	}
 } 

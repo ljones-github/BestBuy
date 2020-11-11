@@ -3,30 +3,10 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Retail.BBCreateAccountTest">
-        <methods>
-          <include name="createAnAccountForm"/>
-          <include name="returnToHomePageUno"/>
-          <include name="closeBrowser"/>
-          <include name="validateLinks"/>
-          <include name="navigateToCreateAccount"/>
-          <include name="returnToHomePageDos"/>
-          <include name="myBestBuyId"/>
-        </methods>
-      </class> <!-- Retail.BBCreateAccountTest -->
       <class name="Retail.BBHomePageTest">
         <methods>
-          <include name="productsPlaystationFive"/>
-          <include name="productsHowToShop"/>
-          <include name="productsAppliances"/>
-          <include name="productsXboxSeries"/>
-          <include name="validateLinks"/>
-          <include name="productsGiftIdeas"/>
           <include name="setUp"/>
-          <include name="productsTopTvDeals"/>
-          <include name="productsBestBuyOutlet"/>
-          <include name="productsHolidayDecor"/>
-          <include name="closeDriver"/>
+          <include name="productsDropDownTest"/>
         </methods>
       </class> <!-- Retail.BBHomePageTest -->
     </classes>

@@ -3,9 +3,9 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="Retail.BBCreateAccountTest">
+			<class name="Retail.BBHomePageTest">
 				<methods>
-					<include name = "myBestBuyId"/>
+					<include name = ".*DropDownTest"/>
 				</methods>
 			</class>
 		</classes>

@@ -10,12 +10,18 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.Duration;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -25,8 +31,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import jdk.jfr.Timespan;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
@@ -186,5 +196,35 @@ public class TestBase {
 		
 		return flag;
 		
+	}
+	
+	public String clickLinksInDropdown(WebDriver driver, WebElement dropdown) 
+	{
+		Actions s = new Actions(driver);
+		
+		s.click(dropdown).build().perform();
+		List<WebElement>links = dropdown.findElements(By.tagName("a"));	
+		int count = 1;
+		String msg = "";
+		JavascriptExecutor je = (JavascriptExecutor)driver;
+		for(WebElement e : links)
+		{
+			je.executeScript("arguments[0].scrollIntoView(true)", e);
+			s.keyDown(Keys.CONTROL).click(e).build().perform();
+		}
+		
+		s.pause(Duration.ofMillis(3000));
+		Set<String>windows = driver.getWindowHandles();
+		Iterator<String>windowIt  = windows.iterator();
+		
+		while(windowIt.hasNext())
+		{
+			driver.switchTo().window(windowIt.next());
+			s.pause(Duration.ofMillis(250)).build().perform();
+			msg += "Window " + count + ":" + driver.getCurrentUrl() + "\n";
+			count++;
+		}
+		
+		return msg;
 	}
 }
